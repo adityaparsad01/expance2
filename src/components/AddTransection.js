@@ -38,9 +38,7 @@ const AddTransection = () => {
           </label>
           <input
             type="number"
-            name="amoun"
-            min="1"
-            maxLength="3"
+            name="amount"
             placeholder="Enter Amount ..."
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
