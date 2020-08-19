@@ -8,7 +8,7 @@ const Transection = ({ transection }) => {
     <li className={transection.amount > 0 ? "plus" : "minus"}>
       {transection.text}
       <span>
-        {sign}${Math.abs(transection.amount)}
+        {sign}$ {Math.abs(transection.amount)}
       </span>
       <button onClick={() => deleteTran(transection.id)} className="delete-btn">
         X
