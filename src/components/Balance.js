@@ -9,7 +9,7 @@ const Balance = () => {
   return (
     <div className="history">
       <h4>Your Balance</h4>
-      <h1 className={total >= 0 ? "plus" : "minus"}>${total}</h1>
+      <h1 className={total >= 0 ? "plus" : "minus"}>$ {total}</h1>
     </div>
   );
 };
