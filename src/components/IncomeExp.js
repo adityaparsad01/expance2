@@ -22,11 +22,15 @@ const IncomeExp = () => {
     <div className="inc-exp-container">
       <div>
         <h4>Income</h4>
-        <p className="money plus">$ {income}</p>
+        <p className="money plus">
+          <small>$</small> {income}
+        </p>
       </div>
       <div className="">
         <h4>Expance</h4>
-        <p className="money minus">$ {expance}</p>
+        <p className="money minus">
+          <small>$</small> {expance}
+        </p>
       </div>
     </div>
   );
