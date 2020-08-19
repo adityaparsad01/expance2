@@ -5,10 +5,12 @@ const IncomeExp = () => {
   const { transections } = useContext(GlobalContext);
 
   const amount = transections.map((data) => data.amount);
-  const income = amount
-    .filter((data) => data > 0)
-    .reduce((acc, item) => (acc += item), 0)
-    .toFixed(2);
+  const income = Math.abs(
+    amount
+      .filter((data) => data > 0)
+      .reduce((acc, item) => (acc += item), 0)
+      .toFixed(2)
+  );
   const expance = Math.abs(
     amount
       .filter((data) => data < 0)
