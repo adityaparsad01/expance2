@@ -7,10 +7,10 @@ const Balance = () => {
   const total = amount.reduce((acc, item) => (acc += item), 0).toFixed(2);
 
   return (
-    <>
+    <div className="history">
       <h4>Your Balance</h4>
-      <h1>${total}</h1>
-    </>
+      <h1 className={total >= 0 ? "plus" : "minus"}>${total}</h1>
+    </div>
   );
 };
 

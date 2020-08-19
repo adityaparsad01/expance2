@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 const Transection = ({ transection }) => {
-  console.log(transection);
   const { deleteTran } = useContext(GlobalContext);
   const sign = transection.amount < 0 ? "-" : "+";
   return (
